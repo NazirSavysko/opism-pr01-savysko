@@ -1,0 +1,21 @@
+середа, 9 вересень UTC 2026 08:31:23 +0000
+
+; <<>> DiG 9.20.24-1ubuntu0.3-Ubuntu <<>> tug.org
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 39717
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;tug.org.			IN	A
+
+;; ANSWER SECTION:
+tug.org.		5531	IN	A	46.4.94.215
+
+;; Query time: 0 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Wed Sep 09 11:31:23 EEST 2026
+;; MSG SIZE  rcvd: 52
+

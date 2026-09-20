@@ -1,0 +1,48 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0* Host self-signed.badssl.com:443 was resolved.
+* IPv6: (none)
+* IPv4: 104.154.89.105
+*   Trying 104.154.89.105:443...
+* ALPN: curl offers h2,http/1.1
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [1577 bytes data]
+* SSL Trust Anchors:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+*   CApath: /etc/ssl/certs
+{ [5 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [108 bytes data]
+* TLSv1.2 (IN), TLS handshake, Certificate (11):
+{ [903 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+{ [333 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server finished (14):
+{ [4 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+} [70 bytes data]
+* TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Finished (20):
+} [16 bytes data]
+* TLSv1.2 (IN), TLS handshake, Finished (20):
+{ [16 bytes data]
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256 / secp256r1 / rsaEncryption
+* ALPN: server accepted http/1.1
+* Server certificate:
+*   subject: C=US; ST=California; L=San Francisco; O=BadSSL; CN=*.badssl.com
+*   start date: Sep 15 21:01:28 2026 GMT
+*   expire date: Sep 14 21:01:28 2028 GMT
+*   issuer: C=US; ST=California; L=San Francisco; O=BadSSL; CN=*.badssl.com
+*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   subjectAltName: "self-signed.badssl.com" matches cert's "*.badssl.com"
+* SSL certificate OpenSSL verify result: self-signed certificate (18)
+
+* closing connection #0
+curl: (60) SSL certificate OpenSSL verify result: self-signed certificate (18)
+More details here: https://curl.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the webpage mentioned above.
